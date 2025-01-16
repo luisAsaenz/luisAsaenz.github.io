@@ -7,7 +7,7 @@ tags:
 
 ## This is Luis's website for EGR314. Also first change to website
 
-What is this to the right of the text? **habebat**: pro.
+What is this to the right of the text? **this is bold**: pro.
 
 - Et ducimus
 - Prosecta hinc nix vidi rettulit cum sitim
