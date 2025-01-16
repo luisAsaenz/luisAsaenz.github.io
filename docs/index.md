@@ -7,7 +7,7 @@ tags:
 
 ## This is Luis's website for EGR314. Also first change to website
 
-What is this to the right of the text? **this is bold**: this is still not working for me
+What is this to the right of the text? **this is bold**: this is still not working for me. 4th time is good luck
 
 - Et ducimus
 - Prosecta hinc nix vidi rettulit cum sitim
