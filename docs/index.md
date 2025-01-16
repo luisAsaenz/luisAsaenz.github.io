@@ -5,10 +5,9 @@ tags:
 - tag2
 ---
 
-## Et poposcerat rursus ad magnus premit
+## This is Luis's website for EGR314. Also first change to website
 
-Lorem markdownum gradus, qui largis, nec pater pleno: fatum. Adspexit cursus
-cur, aut in adhuc crimina **habebat**: pro.
+What is this to the right of the text? **habebat**: pro.
 
 - Et ducimus
 - Prosecta hinc nix vidi rettulit cum sitim
