@@ -665,22 +665,23 @@
 <tbody>
 <tr>
 <td>Option 1<br><a class="glightbox" href="../option1SVR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="LM2575D2T-3.3R4G" src="../option1SVR.png" /></a><br>LM2575D2T-3.3R4G<br>$3.32/Each<br><a href="https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688?s=N4IgTCBcDaIDIFkwFYDsyAiYAqBaAzAHT4BKALAOIgC6AvkA">IC REG BUCK 3.3V 1A D2PAK-5</a></td>
-<td><li>We use one similar in class</li><li>Easy to solder</li></td>
-<td>cons</td>
+<td><li>We used one similar in class</li><li>Easy to solder</li></td>
+<td><li>Frequency switching is much smaller than option 2</li></td>
 </tr>
 <tr>
 <td>Option 2<br><a class="glightbox" href="../option2SVR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="LM2575-3.3WU-TR" src="../option2SVR.png" /></a><br>$1.75/Each<br><a href="https://www.digikey.ch/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646">IC REG BUCK 3.3V 1A TO263-5</a></td>
-<td>pros</td>
-<td>cons</td>
+<td><li>Easy to solder</li></td>
+<td><li>Less heat resistant than option 1</li></td>
 </tr>
 <tr>
 <td>Option 3<br><a class="glightbox" href="../option3SVR.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TPS62162DSGR" src="../option3SVR.png" /></a><br>$1.38/Each<br><a href="https://www.digikey.ch/en/products/detail/texas-instruments/TPS62162DSGR/2833447">IC REG BUCK 3.3V 1A 8WSON</a></td>
-<td>pros</td>
+<td><li>Small, so saves space on a PCB.</li></td>
 <td><li>Potentially difficult to solder</li></td>
 </tr>
 </tbody>
 </table>
 <h3 id="rational">Rational</h3>
+<p>My choice for the switching voltage regulator is option 1, LM2575D2T-3.3R4G. This component was chosen due to being familiar with the through hole version. It was also chosen due to the component being potentially the easiest to solder.</p>
 <h1 id="esp32-s3-wroom-1-n4-diagram-and-table">ESP32-S3-WROOM-1-N4 Diagram and Table</h1>
 <p><a class="glightbox" href="../esp32Pinout.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ESP32 Pinout" src="../esp32Pinout.png" /></a></p>
 <table>
@@ -809,6 +810,8 @@
 </tr>
 </tbody>
 </table>
+<h3 id="role">Role</h3>
+<p>My role in team 202 is head of the wifi module. My system will connect to wifi, and through an application or web service our user will be able to manipulate our exhibit. My system will communicate to another team member's system and they will communicate to another, resulting in a daisy chain of systems, through this daisy chain process my device will be able to communicate the users responses to other portions of the exhibit and deliver the response the user initiated.</p>
 
 
 
