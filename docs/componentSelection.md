@@ -40,7 +40,7 @@ My choice for the switching voltage regulator is option 1, LM2575D2T-3.3R4G. Thi
 | Absolute Maximum current <br> (for entire IC) | Not Stated/ MIN current: 500mA     |
 | Maximum GPIO current <br> (per pin)           | 20mA, 1500mA total      | 
 | Supports External Interrupts?                 | Yes, only 1.     |
-| Required Programming Hardware, Cost, URL      | MPLAB / FREE / ![link to MPLAB](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)      |
+| Required Programming Hardware, Cost, URL      | MPLAB / FREE / [Link to MPLAB](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)      |
 
 | Module         | # Available | Needed | Associated Pins (or * for any) |
 | -------------- | ----------- | ------ | ------------------------------ |
