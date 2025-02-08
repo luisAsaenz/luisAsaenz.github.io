@@ -13,12 +13,12 @@ title: Component Selection
 
 | Solution | Pros | Cons|
 |----------|------|-----|
-|Option 1<br>![LM2575D2T-3.3R4G](./option1SVR.png)<br>LM2575D2T-3.3R4G<br>$3.32/Each<br>[IC REG BUCK 3.3V 1A D2PAK-5](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688?s=N4IgTCBcDaIDIFkwFYDsyAiYAqBaAzAHT4BKALAOIgC6AvkA)|<li>We use one similar in class</li><li>Easy to solder</li>|cons|
-|Option 2<br>![LM2575-3.3WU-TR](./option2SVR.png)<br>$1.75/Each<br>[IC REG BUCK 3.3V 1A TO263-5](https://www.digikey.ch/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646)|pros|cons|
-|Option 3<br>![TPS62162DSGR](./option3SVR.png)<br>$1.38/Each<br>[IC REG BUCK 3.3V 1A 8WSON](https://www.digikey.ch/en/products/detail/texas-instruments/TPS62162DSGR/2833447)|pros|<li>Potentially difficult to solder</li>|
+|Option 1<br>![LM2575D2T-3.3R4G](./option1SVR.png)<br>LM2575D2T-3.3R4G<br>$3.32/Each<br>[IC REG BUCK 3.3V 1A D2PAK-5](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688?s=N4IgTCBcDaIDIFkwFYDsyAiYAqBaAzAHT4BKALAOIgC6AvkA)|<li>We used one similar in class</li><li>Easy to solder</li>|<li>Frequency switching is much smaller than option 2</li>|
+|Option 2<br>![LM2575-3.3WU-TR](./option2SVR.png)<br>$1.75/Each<br>[IC REG BUCK 3.3V 1A TO263-5](https://www.digikey.ch/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646)|<li>Easy to solder</li>|<li>Less heat resistant than option 1</li>|
+|Option 3<br>![TPS62162DSGR](./option3SVR.png)<br>$1.38/Each<br>[IC REG BUCK 3.3V 1A 8WSON](https://www.digikey.ch/en/products/detail/texas-instruments/TPS62162DSGR/2833447)|<li>Small, so saves space on a PCB.</li>|<li>Potentially difficult to solder</li>|
 
 ### Rational
-
+My choice for the switching voltage regulator is option 1, LM2575D2T-3.3R4G. This component was chosen due to being familiar with the through hole version. It was also chosen due to the component being potentially the easiest to solder.
 
 # ESP32-S3-WROOM-1-N4 Diagram and Table
 
@@ -52,3 +52,6 @@ title: Component Selection
 | LED PWM        | 36           | 1      |   IO46(16)                            |
 | Motor PWM      | 36           | 0      |                               |
 | USB Programmer | 2           | 2      | IO19(13), IO20(14)                              |
+
+### Role
+My role in team 202 is head of the wifi module. My system will connect to wifi, and through an application or web service our user will be able to manipulate our exhibit. My system will communicate to another team member's system and they will communicate to another, resulting in a daisy chain of systems, through this daisy chain process my device will be able to communicate the users responses to other portions of the exhibit and deliver the response the user initiated.
