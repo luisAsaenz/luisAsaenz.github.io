@@ -20,34 +20,35 @@ title: Component Selection
 ### Rational
 
 
-# ESP32-S3-WROOM-1-N4
+# ESP32-S3-WROOM-1-N4 Diagram and Table
 
-| ESP Info                                      | Answer | Help                                                                                                      |
-| --------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
-| Model                                         | ?      | Include the entire part number (leave off any letters at the end that specify the package type)           |
-| Product Page URL                              | ?      | [Product page](https://www.espressif.com/en/products/modules) found here. com                                                                                    |
-| ESP32-S3-WROOM-1-N4 Datasheet URL             | ?      | Do not paste links directly into the table.  Use a [ESP32-S3-WROOM-1-N4](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)                                              |
-| ESP32 S3 Datasheet URL                        | ?      | [ESP32-S3](https://espressif.com/documentation/esp32-s3_datasheet_en.pdf) functions                                                                              |
-| ESP32 S3 Technical Reference Manual URL       | ?      | [Technical Manual](https://espressif.com/documentation/esp32-s3_datasheet_en.pdf)                                                          |
-| Vendor link                                   | ?      | [Digikey](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639)                       |
-| Code Examples                                 | ?      | url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals |
-| External Resources URL(s)                     | ?      | Search on Google and YouTube for other resources for each specific microcontroller.                       |
-| Unit cost                                     | ?      | $2.95                                                                |
-| Absolute Maximum Current for entire IC        | ?      | 500mA                                                                     |
-| Supply Voltage Range                          | ?      | Min / Nominal / Max / Absolute Max, as found in datasheet                                                 |
-| Absolute Maximum current <br> (for entire IC) | ?      | as found in datasheet                                                                                     |
-| Maximum GPIO current <br> (per pin)           | ?      | as found in datasheet                                                                                     |
-| Supports External Interrupts?                 | ?      | as found in datasheet                                                                                     |
-| Required Programming Hardware, Cost, URL      | ?      | as found in datasheet                                                                                     |
+![ESP32 Pinout](./esp32Pinout.png)
+
+
+| ESP Info                                      | Answer |
+| --------------------------------------------- | ------ |
+| Model                                         | ESP32-S3-WROOM-1-N4      | 
+| Product Page URL                              | [Product page](https://www.espressif.com/en/products/modules) |
+| ESP32-S3-WROOM-1-N4 Datasheet URL             | [ESP32-S3-WROOM-1-N4](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)      | 
+| ESP32 S3 Datasheet URL                        | [ESP32-S3](https://espressif.com/documentation/esp32-s3_datasheet_en.pdf)      | 
+| ESP32 S3 Technical Reference Manual URL       | [Technical Manual](https://espressif.com/documentation/esp32-s3_datasheet_en.pdf)      | 
+| Vendor link                                   | [Digikey](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639)      |
+| Code Examples                                 | None can be found.      |
+| External Resources URL(s)                     | Wifi beginners guide [video](https://www.youtube.com/watch?v=aH3sLEQI4_w)      | 
+| Unit cost                                     | $2.95      |             
+| Supply Voltage Range                          | 3V / 3.3V / 3.6V      | 
+| Absolute Maximum current <br> (for entire IC) | Not Stated/ MIN current: 500mA     |
+| Maximum GPIO current <br> (per pin)           | 20mA, 1500mA total      | 
+| Supports External Interrupts?                 | Yes, only 1.     |
+| Required Programming Hardware, Cost, URL      | MPLAB / FREE / ![link to MPLAB](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)      |
 
 | Module         | # Available | Needed | Associated Pins (or * for any) |
 | -------------- | ----------- | ------ | ------------------------------ |
-| UART           | ?           | ?      | ?                              |
-| external SPI\* | ?           | ?      | ?                              |
-| I2C            | ?           | ?      | ?                              |
-| GPIO           | ?           | ?      | ?                              |
-| ADC            | ?           | ?      | ?                              |
-| LED PWM        | ?           | ?      | ?                              |
-| Motor PWM      | ?           | ?      | ?                              |
-| USB Programmer | ?           | 1      | ?                              |
-| ...            |
+| UART           | 2           | 2     | IO17(10), IO18(11)                              |
+| external SPI\* | 36           | 0      |                               |
+| I2C            | 26          | 0      |                               |
+| GPIO           | 36           | 0      |                               |
+| ADC            | 20           | 0      |                               |
+| LED PWM        | 36           | 1      |   IO46(16)                            |
+| Motor PWM      | 36           | 0      |                               |
+| USB Programmer | 2           | 2      | IO19(13), IO20(14)                              |
