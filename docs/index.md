@@ -1,10 +1,8 @@
 ---
 title: Welcome
 tags:
-- tag1
-- tag2
 ---
 
-## This is Luis's website for EGR314. Also first change to website
+## Homepage 
 
-What is this to the right of the text? **this is bold**: this is still not working for me. 4th time is good luck. last change for night. *Test 6*.
+[Here](https://egr314-2025-s-202.github.io/team202.github.io/) is a link to my team's github website. There, my team and I will discuss our project. 
