@@ -3,7 +3,7 @@ title: Schematic
 ---
 ## ESP32 - WIFI SUBSYSTEM
 
-![Wifi Subsystem](./individualSchematicIM.png)
+![Wifi Subsystem](./subfolder/individualSchematic1.png)
 <br>Below are link for the schematic:
-<br><li>[PDF](./individualSchematic.pdf) of schematic.</li>
-<br><li>[ZIP file](./IndividualSchematic.zip) of project.</li>
+<br><li>[PDF](./subfolder/individualSchematic.pdf) of schematic.</li>
+<br><li>[ZIP file](./subfolder/IndividualSchematic.zip) of project.</li>

@@ -61,7 +61,7 @@ My choice for the switching voltage regulator is option 1, LM2575D2T-3.3R4G. Thi
 
 | Component | Name | Part Number | Supply Voltage Range | Quantity | Absolute Maximum Current (mA) | Total Current (mA) | Unit |
 |-----------|------|-------------|----------------------|----------|--------------------------------|-------------------|------|
-| ESP-32 | ESP32-S3-WROOM-1-N4 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | 500 | 1000 | mA |
+| ESP-32 | ESP32-S3-WROOM-1-N4 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | NA | 1000 | mA |
 | +3.3V Regulator | LM2575D2T-3.3R4G | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 | NA | mA |
 
 | +3.3V Power Rail | Name | Part Number | Supply Voltage Range | Quantity | Absolute Maximum Current (mA) | Total Current (mA) | Unit |
@@ -93,3 +93,5 @@ My choice for the switching voltage regulator is option 1, LM2575D2T-3.3R4G. Thi
 | ESP-32 | ESP32-S3-WROOM-1-N4 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | 1000 | 1000 | mA |
 | +3.3V Regulator | LM2575D2T-3.3R4G | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 |  |  |
 | Total Remaining Current Available on External Power Source 3 |  |  |  |  |  | 500 | mA |
+
+The power budget allows the team to coordinate their micro-controllers with each other. By gathering the information above, team 202 can decide whose board will initiate team power, as well as derive how much power the exhibit will consume. By calculating our consumption we can determine how much power we shall need as a team and how long our exhibit can operate.
