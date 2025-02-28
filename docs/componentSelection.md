@@ -59,39 +59,27 @@ My choice for the switching voltage regulator is option 1, LM2575D2T-3.3R4G. Thi
 
 ## Power Budget
 
-| Component | Name | Part Number | Supply Voltage Range | Quantity | Absolute Maximum Current (mA) | Total Current (mA) | Unit |
-|-----------|------|-------------|----------------------|----------|--------------------------------|-------------------|------|
-| ESP-32 | ESP32-S3-WROOM-1-N4 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | NA | 1000 | mA |
-| +3.3V Regulator | LM2575D2T-3.3R4G | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 | NA | mA |
-
-| +3.3V Power Rail | Name | Part Number | Supply Voltage Range | Quantity | Absolute Maximum Current (mA) | Total Current (mA) | Unit |
-|-------------------|------|-------------|----------------------|----------|--------------------------------|-------------------|------|
-| ESP-32 | ESP32-S3-WROOM-1-N4 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | 500 | 1000 | mA |
-| Subtotal |  |  |  |  |  | 1000 | mA |
-| Safety Margin |  |  |  |  |  | 25% |  |
-| Total Current Required on +3.3V Rail |  |  |  |  |  | 1250 | mA |
-| Regulator or Source Choice | +3.3V Regulator | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 | 1500 | mA |
-| Total Remaining Current Available on 3.3V Rail |  |  |  |  |  | 250 | mA |
-
-| External Power Source 1 | Name | Part Number | Supply Voltage Range | Output Voltage | Absolute Maximum Current (mA) | Total Current (mA) | Unit |
-|--------------------------|------|-------------|----------------------|----------------|--------------------------------|-------------------|------|
-| Power Source 1 Selection | Plug-in Wall Supply | Model:0930 | 100 - 240VAC | 9V | 3000 | 5000 | mA |
-| ESP-32 | ESP32-S3-WROOM-1-N4 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | 1000 | 1000 |  |
-| +3.3V Regulator | LM2575D2T-3.3R4G | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 |  | 0 | mA |
-| Total Remaining Current Available on External Power Source 1 |  |  |  |  |  | 4000 | mA |
-
-| External Power Source 2 | Name | Part Number | Supply Voltage Range | Output Voltage | Absolute Maximum Current (mA) | Total Current (mA) | Unit |
-|--------------------------|------|-------------|----------------------|----------------|--------------------------------|-------------------|------|
-| Power Source 2 Selection | USB | USB3131 | 30V | 3.3V | 1800 | 1500 | mA |
-| ESP-32 | ESP32-S3-WROOM-1-N4 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | 1000 | 1000 | mA |
-| +3.3V Regulator | LM2575D2T-3.3R4G | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 |  |  |
-| Total Remaining Current Available on External Power Source 2 |  |  |  |  |  | 500 | mA |
-
-| External Power Source 3 | Name | Part Number | Supply Voltage Range | Output Voltage | Absolute Maximum Current (mA) | Total Current (mA) | Unit |
-|--------------------------|------|-------------|----------------------|----------------|--------------------------------|-------------------|------|
-| Power Source 3 Selection | Team Power | NA | +9V | 3.3V | 3000 | 1500 | mA |
-| ESP-32 | ESP32-S3-WROOM-1-N4 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | 1000 | 1000 | mA |
-| +3.3V Regulator | LM2575D2T-3.3R4G | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 |  |  |
-| Total Remaining Current Available on External Power Source 3 |  |  |  |  |  | 500 | mA |
+| Section | Component Name | Part Number | Supply Voltage Range | # | Absolute Maximum Current (mA) | Total Current (mA) | Unit |
+|---------|----------------|-------------|----------------------|---|--------------------------------|--------------------|----|
+| A. Major Components | ESP-32 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | NA | 1000 | mA |
+| | +3.3V Regulator | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 | NA | mA |
+| B. +3.3V Power Rail | ESP-32 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | NA | 1000 | mA |
+| | Subtotal | | | | | 1000 | mA |
+| | Safety Margin | | | | | 25% | |
+| | Total Current Required on +3.3V Rail | | | | | 1250 | mA |
+| C. Regulator Choice | +3.3V Regulator | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 | 1500 | mA |
+| | Total Remaining Current Available on 3.3V Rail | | | | | 250 | mA |
+| D. External Power Source 1 | Plug-in Wall Supply | Model:0930 | 100 - 240VAC | 9V | 3000 | 1500 | mA |
+| Power Rails Connected to External Power Source 1 | ESP-32 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | 1000 | 1000 | mA |
+| | +3.3V Regulator | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | | 0 | mA |
+| | Total Remaining Current Available on External Power Source 1 | | | | | 500 | mA |
+| External Power Source 2 | USB | USB3131 | 30V | 3.3V | 1800 | 1500 | mA |
+| Power Rails Connected to External Power Source 2 | ESP-32 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | 1000 | 1000 | mA |
+| | +3.3V Regulator | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 | | mA |
+| | Total Remaining Current Available on External Power Source 2 | | | | | 500 | mA |
+| External Power Source 3 | Team Power | NA | +9V | 3.3V | 3000 | 1500 | mA |
+| Power Rails Connected to External Power Source 3 | ESP-32 | ESP32-S3-WROOM-1-N4 | 3.0V - 3.6V | 1 | 1000 | 1000 | mA |
+| | +3.3V Regulator | LM2575D2T-3.3R4G | 3.234V - 3.366V | 1 | 3000 | | mA |
+| | Total Remaining Current Available on External Power Source 3 | | | | | 500 | mA |
 
 The power budget allows the team to coordinate their micro-controllers with each other. By gathering the information above, team 202 can decide whose board will initiate team power, as well as derive how much power the exhibit will consume. By calculating our consumption we can determine how much power we shall need as a team and how long our exhibit can operate.
