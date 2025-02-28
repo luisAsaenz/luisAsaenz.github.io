@@ -858,11 +858,11 @@
 <table>
 <thead>
 <tr>
-<th>Component</th>
-<th>Name</th>
+<th>Section</th>
+<th>Component Name</th>
 <th>Part Number</th>
 <th>Supply Voltage Range</th>
-<th>Quantity</th>
+<th>#</th>
 <th>Absolute Maximum Current (mA)</th>
 <th>Total Current (mA)</th>
 <th>Unit</th>
@@ -870,8 +870,8 @@
 </thead>
 <tbody>
 <tr>
+<td>A. Major Components</td>
 <td>ESP-32</td>
-<td>ESP32-S3-WROOM-1-N4</td>
 <td>ESP32-S3-WROOM-1-N4</td>
 <td>3.0V - 3.6V</td>
 <td>1</td>
@@ -880,8 +880,8 @@
 <td>mA</td>
 </tr>
 <tr>
+<td></td>
 <td>+3.3V Regulator</td>
-<td>LM2575D2T-3.3R4G</td>
 <td>LM2575D2T-3.3R4G</td>
 <td>3.234V - 3.366V</td>
 <td>1</td>
@@ -889,45 +889,29 @@
 <td>NA</td>
 <td>mA</td>
 </tr>
-</tbody>
-</table>
-<table>
-<thead>
 <tr>
-<th>+3.3V Power Rail</th>
-<th>Name</th>
-<th>Part Number</th>
-<th>Supply Voltage Range</th>
-<th>Quantity</th>
-<th>Absolute Maximum Current (mA)</th>
-<th>Total Current (mA)</th>
-<th>Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
+<td>B. +3.3V Power Rail</td>
 <td>ESP-32</td>
-<td>ESP32-S3-WROOM-1-N4</td>
 <td>ESP32-S3-WROOM-1-N4</td>
 <td>3.0V - 3.6V</td>
 <td>1</td>
-<td>500</td>
+<td>NA</td>
 <td>1000</td>
 <td>mA</td>
 </tr>
 <tr>
+<td></td>
 <td>Subtotal</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
 <td>1000</td>
 <td>mA</td>
 </tr>
 <tr>
-<td>Safety Margin</td>
 <td></td>
+<td>Safety Margin</td>
 <td></td>
 <td></td>
 <td></td>
@@ -936,8 +920,8 @@
 <td></td>
 </tr>
 <tr>
-<td>Total Current Required on +3.3V Rail</td>
 <td></td>
+<td>Total Current Required on +3.3V Rail</td>
 <td></td>
 <td></td>
 <td></td>
@@ -946,7 +930,7 @@
 <td>mA</td>
 </tr>
 <tr>
-<td>Regulator or Source Choice</td>
+<td>C. Regulator Choice</td>
 <td>+3.3V Regulator</td>
 <td>LM2575D2T-3.3R4G</td>
 <td>3.234V - 3.366V</td>
@@ -956,8 +940,8 @@
 <td>mA</td>
 </tr>
 <tr>
-<td>Total Remaining Current Available on 3.3V Rail</td>
 <td></td>
+<td>Total Remaining Current Available on 3.3V Rail</td>
 <td></td>
 <td></td>
 <td></td>
@@ -965,45 +949,29 @@
 <td>250</td>
 <td>mA</td>
 </tr>
-</tbody>
-</table>
-<table>
-<thead>
 <tr>
-<th>External Power Source 1</th>
-<th>Name</th>
-<th>Part Number</th>
-<th>Supply Voltage Range</th>
-<th>Output Voltage</th>
-<th>Absolute Maximum Current (mA)</th>
-<th>Total Current (mA)</th>
-<th>Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Power Source 1 Selection</td>
+<td>D. External Power Source 1</td>
 <td>Plug-in Wall Supply</td>
 <td>Model:0930</td>
 <td>100 - 240VAC</td>
 <td>9V</td>
 <td>3000</td>
-<td>5000</td>
+<td>1500</td>
 <td>mA</td>
 </tr>
 <tr>
+<td>Power Rails Connected to External Power Source 1</td>
 <td>ESP-32</td>
-<td>ESP32-S3-WROOM-1-N4</td>
 <td>ESP32-S3-WROOM-1-N4</td>
 <td>3.0V - 3.6V</td>
 <td>1</td>
 <td>1000</td>
 <td>1000</td>
-<td></td>
+<td>mA</td>
 </tr>
 <tr>
+<td></td>
 <td>+3.3V Regulator</td>
-<td>LM2575D2T-3.3R4G</td>
 <td>LM2575D2T-3.3R4G</td>
 <td>3.234V - 3.366V</td>
 <td>1</td>
@@ -1012,33 +980,17 @@
 <td>mA</td>
 </tr>
 <tr>
+<td></td>
 <td>Total Remaining Current Available on External Power Source 1</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td>4000</td>
+<td>500</td>
 <td>mA</td>
 </tr>
-</tbody>
-</table>
-<table>
-<thead>
 <tr>
-<th>External Power Source 2</th>
-<th>Name</th>
-<th>Part Number</th>
-<th>Supply Voltage Range</th>
-<th>Output Voltage</th>
-<th>Absolute Maximum Current (mA)</th>
-<th>Total Current (mA)</th>
-<th>Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Power Source 2 Selection</td>
+<td>External Power Source 2</td>
 <td>USB</td>
 <td>USB3131</td>
 <td>30V</td>
@@ -1048,8 +1000,8 @@
 <td>mA</td>
 </tr>
 <tr>
+<td>Power Rails Connected to External Power Source 2</td>
 <td>ESP-32</td>
-<td>ESP32-S3-WROOM-1-N4</td>
 <td>ESP32-S3-WROOM-1-N4</td>
 <td>3.0V - 3.6V</td>
 <td>1</td>
@@ -1058,18 +1010,18 @@
 <td>mA</td>
 </tr>
 <tr>
+<td></td>
 <td>+3.3V Regulator</td>
-<td>LM2575D2T-3.3R4G</td>
 <td>LM2575D2T-3.3R4G</td>
 <td>3.234V - 3.366V</td>
 <td>1</td>
 <td>3000</td>
 <td></td>
-<td></td>
+<td>mA</td>
 </tr>
 <tr>
-<td>Total Remaining Current Available on External Power Source 2</td>
 <td></td>
+<td>Total Remaining Current Available on External Power Source 2</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1077,24 +1029,8 @@
 <td>500</td>
 <td>mA</td>
 </tr>
-</tbody>
-</table>
-<table>
-<thead>
 <tr>
-<th>External Power Source 3</th>
-<th>Name</th>
-<th>Part Number</th>
-<th>Supply Voltage Range</th>
-<th>Output Voltage</th>
-<th>Absolute Maximum Current (mA)</th>
-<th>Total Current (mA)</th>
-<th>Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Power Source 3 Selection</td>
+<td>External Power Source 3</td>
 <td>Team Power</td>
 <td>NA</td>
 <td>+9V</td>
@@ -1104,8 +1040,8 @@
 <td>mA</td>
 </tr>
 <tr>
+<td>Power Rails Connected to External Power Source 3</td>
 <td>ESP-32</td>
-<td>ESP32-S3-WROOM-1-N4</td>
 <td>ESP32-S3-WROOM-1-N4</td>
 <td>3.0V - 3.6V</td>
 <td>1</td>
@@ -1114,18 +1050,18 @@
 <td>mA</td>
 </tr>
 <tr>
+<td></td>
 <td>+3.3V Regulator</td>
-<td>LM2575D2T-3.3R4G</td>
 <td>LM2575D2T-3.3R4G</td>
 <td>3.234V - 3.366V</td>
 <td>1</td>
 <td>3000</td>
 <td></td>
-<td></td>
+<td>mA</td>
 </tr>
 <tr>
-<td>Total Remaining Current Available on External Power Source 3</td>
 <td></td>
+<td>Total Remaining Current Available on External Power Source 3</td>
 <td></td>
 <td></td>
 <td></td>
