@@ -16,7 +16,7 @@ title: API - Messaging
 
 ### Message Type 1:
 
-|----------- | Byte 5-6 | Byte 7 | Byte 8 |
+|   | Byte 5-6 | Byte 7 | Byte 8 |
 |------------| --------------| ------------- | ------------- |
 | Variable Name | message_type | motor_id | motor_direction |
 |Variable Type | char | char | int8_t |
@@ -26,7 +26,7 @@ title: API - Messaging
 
 ### Message Type 2:
 
-|----------- | Byte 5-6 | Byte 7 | Byte 8 |
+|     | Byte 5-6 | Byte 7 | Byte 8 |
 |------------| --------------| ------------- | ------------- |
 | Variable Name | message_type | sensor_id | sensor_value |
 |Variable Type | char | char | char |
@@ -36,7 +36,7 @@ title: API - Messaging
 
 ### Message Type 3:
 
-|----------- | Byte 5 - Byte 6 | Byte 7 - Byte 55 |
+|      | Byte 5 - Byte 6 | Byte 7 - Byte 55 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | error_message |
 |Variable Type | char | char |
@@ -46,7 +46,7 @@ title: API - Messaging
 
 ### Message Type 4:
 
-|----------- | Byte 5 - Byte 6 | Byte 7 |
+|      | Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | wifi_status |
 |Variable Type | char | char |
@@ -56,7 +56,7 @@ title: API - Messaging
 
 ### Message Type 5:
 
-|----------- | Byte 5 - Byte 6 | Byte 7 |
+|      | Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | subsystem_id |
 |Variable Type | char | char |
@@ -66,7 +66,7 @@ title: API - Messaging
 
 ### Message Type 6:
 
-|----------- | Byte 5 - Byte 6 | Byte 7 |
+|      | Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_status |
 |Variable Type | char | uint8_t |
@@ -76,7 +76,7 @@ title: API - Messaging
 
 ### Message Type 7:
 
-|----------- | Byte 5 - Byte 6 | Byte 7 |
+|      | Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_status |
 |Variable Type | char | uint8_t |
@@ -86,7 +86,7 @@ title: API - Messaging
 
 ### Message Type 8:
 
-|----------- | Byte 5 - Byte 6 | Byte 7 - Byte 55 |
+|      | Byte 5 - Byte 6 | Byte 7 - Byte 55 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | broadcast_message |
 |Variable Type | char | char |
