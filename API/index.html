@@ -12,13 +12,13 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/schematic/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/API/">
       
       
-        <link rel="prev" href="../datasheet/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../subfolder/">
+        <link rel="next" href="../billofMaterials/">
       
       
       <link rel="icon" href="../static/logo.png">
@@ -29,7 +29,7 @@
 
     
       
-        <title>Schematic - EGR314 Report Template</title>
+        <title>API - Messaging - EGR314 Report Template</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#esp32-wifi-subsystem" class="md-skip">
+        <a href="#message-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Schematic
+              API - Messaging
             
           </span>
         </div>
@@ -217,9 +217,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../API/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -285,11 +287,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../schematic/" class="md-tabs__link">
         
   
     
@@ -394,9 +394,27 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../API/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    API - Messaging
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -405,6 +423,93 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#message-structure" class="md-nav__link">
+    Message Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Message Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-1" class="md-nav__link">
+    Message Type 1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-2" class="md-nav__link">
+    Message Type 2:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3" class="md-nav__link">
+    Message Type 3:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-4" class="md-nav__link">
+    Message Type 4:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-5" class="md-nav__link">
+    Message Type 5:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-6" class="md-nav__link">
+    Message Type 6:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-7" class="md-nav__link">
+    Message Type 7:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-8" class="md-nav__link">
+    Message Type 8:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -470,27 +575,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Schematic
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../schematic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -499,31 +586,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#esp32-wifi-subsystem" class="md-nav__link">
-    ESP32 - WIFI SUBSYSTEM
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -596,9 +658,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#esp32-wifi-subsystem" class="md-nav__link">
-    ESP32 - WIFI SUBSYSTEM
+  <a href="#message-structure" class="md-nav__link">
+    Message Structure
   </a>
+  
+    <nav class="md-nav" aria-label="Message Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-1" class="md-nav__link">
+    Message Type 1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-2" class="md-nav__link">
+    Message Type 2:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3" class="md-nav__link">
+    Message Type 3:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-4" class="md-nav__link">
+    Message Type 4:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-5" class="md-nav__link">
+    Message Type 5:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-6" class="md-nav__link">
+    Message Type 6:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-7" class="md-nav__link">
+    Message Type 7:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-8" class="md-nav__link">
+    Message Type 8:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -617,7 +741,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/schematic.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/API.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -625,13 +749,359 @@
   
 
 
-  <h1>Schematic</h1>
+  <h1>API - Messaging</h1>
 
-<h2 id="esp32-wifi-subsystem">ESP32 - WIFI SUBSYSTEM</h2>
-<p><a class="glightbox" href="../subfolder/individualSchematic1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Wifi Subsystem" src="../subfolder/individualSchematic1.jpg" /></a>
-<br>Below are link for the schematic:
-<br><li><a href="../subfolder/individualSchematic.pdf">PDF</a> of schematic.</li>
-<br><li><a href="../subfolder/IndividualSchematic.zip">ZIP file</a> of project.</li></p>
+<h2 id="message-structure">Message Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Message Type <br /> byte 1-2 <br /> (char)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Set motor X in Y in direction</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Print sensor X value Y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Subsystem Wifi Error Message</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Subsystem Wifi Status X</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Subsystem X is not communicating</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Motor Status, X</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Sensor Status, X</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Broadcast</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-1">Message Type 1:</h3>
+<table>
+<thead>
+<tr>
+<th>-----------</th>
+<th>Byte 5-6</th>
+<th>Byte 7</th>
+<th>Byte 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>motor_id</td>
+<td>motor_direction</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>char</td>
+<td>int8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>1</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>1</td>
+<td>2</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-2">Message Type 2:</h3>
+<table>
+<thead>
+<tr>
+<th>-----------</th>
+<th>Byte 5-6</th>
+<th>Byte 7</th>
+<th>Byte 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>sensor_id</td>
+<td>sensor_value</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>char</td>
+<td>char</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>2</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2</td>
+<td>2</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-3">Message Type 3:</h3>
+<table>
+<thead>
+<tr>
+<th>-----------</th>
+<th>Byte 5 - Byte 6</th>
+<th>Byte 7 - Byte 55</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>error_message</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>char</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>Wifi not connecting</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>Wifi is connecting</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>3</td>
+<td>Wifi is connecting</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-4">Message Type 4:</h3>
+<table>
+<thead>
+<tr>
+<th>-----------</th>
+<th>Byte 5 - Byte 6</th>
+<th>Byte 7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>wifi_status</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>char</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>4</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-5">Message Type 5:</h3>
+<table>
+<thead>
+<tr>
+<th>-----------</th>
+<th>Byte 5 - Byte 6</th>
+<th>Byte 7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>subsystem_id</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>char</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>a</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>d</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>5</td>
+<td>c</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-6">Message Type 6:</h3>
+<table>
+<thead>
+<tr>
+<th>-----------</th>
+<th>Byte 5 - Byte 6</th>
+<th>Byte 7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>motor_status</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>6</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-7">Message Type 7:</h3>
+<table>
+<thead>
+<tr>
+<th>-----------</th>
+<th>Byte 5 - Byte 6</th>
+<th>Byte 7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>motor_status</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>7</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-8">Message Type 8:</h3>
+<table>
+<thead>
+<tr>
+<th>-----------</th>
+<th>Byte 5 - Byte 6</th>
+<th>Byte 7 - Byte 55</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>broadcast_message</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>char</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>Minimum value is 1 character</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>Max value is 48 characters</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>8</td>
+<td>This is broadcast</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -659,7 +1129,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../datasheet/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Block Diagram" rel="prev">
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -669,20 +1139,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Block Diagram
+                Welcome
               </div>
             </div>
           </a>
         
         
           
-          <a href="../subfolder/" class="md-footer__link md-footer__link--next" aria-label="Next: This is the index to a subfolder" rel="next">
+          <a href="../billofMaterials/" class="md-footer__link md-footer__link--next" aria-label="Next: Bill of Materials" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                This is the index to a subfolder
+                Bill of Materials
               </div>
             </div>
             <div class="md-footer__button md-icon">
