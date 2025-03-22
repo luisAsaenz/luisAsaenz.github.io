@@ -78,7 +78,7 @@ title: API - Messaging
 
 |      | Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
-| Variable Name | message_type | motor_status |
+| Variable Name | message_type | sensor_status |
 |Variable Type | char | uint8_t |
 | Min Value | 1 | 0 |
 | Max Value| 8 | 1 |
