@@ -755,7 +755,7 @@
 <table>
 <thead>
 <tr>
-<th>Message Type <br /> byte 1-2 <br /> (char)</th>
+<th>Message Type <br /> 1 Byte <br /> (int8_t)</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -799,9 +799,9 @@
 <thead>
 <tr>
 <th></th>
-<th>Byte 5-6</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 <th>Byte 7</th>
-<th>Byte 8</th>
 </tr>
 </thead>
 <tbody>
@@ -813,27 +813,27 @@
 </tr>
 <tr>
 <td>Variable Type</td>
-<td>char</td>
-<td>char</td>
 <td>int8_t</td>
+<td>char</td>
+<td>char</td>
 </tr>
 <tr>
 <td>Min Value</td>
 <td>1</td>
 <td>1</td>
-<td>-1</td>
+<td>0</td>
 </tr>
 <tr>
 <td>Max Value</td>
 <td>8</td>
 <td>3</td>
-<td>1</td>
+<td>2</td>
 </tr>
 <tr>
 <td>Example</td>
 <td>1</td>
 <td>2</td>
-<td>-1</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
@@ -842,9 +842,9 @@
 <thead>
 <tr>
 <th></th>
-<th>Byte 5-6</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 <th>Byte 7</th>
-<th>Byte 8</th>
 </tr>
 </thead>
 <tbody>
@@ -856,9 +856,9 @@
 </tr>
 <tr>
 <td>Variable Type</td>
+<td>int8_t</td>
 <td>char</td>
-<td>char</td>
-<td>char</td>
+<td>int8_t</td>
 </tr>
 <tr>
 <td>Min Value</td>
@@ -885,8 +885,8 @@
 <thead>
 <tr>
 <th></th>
-<th>Byte 5 - Byte 6</th>
-<th>Byte 7 - Byte 55</th>
+<th>Byte 5</th>
+<th>Byte 6 - Byte 55</th>
 </tr>
 </thead>
 <tbody>
@@ -897,7 +897,7 @@
 </tr>
 <tr>
 <td>Variable Type</td>
-<td>char</td>
+<td>int8_t</td>
 <td>char</td>
 </tr>
 <tr>
@@ -922,8 +922,8 @@
 <thead>
 <tr>
 <th></th>
-<th>Byte 5 - Byte 6</th>
-<th>Byte 7</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 </tr>
 </thead>
 <tbody>
@@ -934,7 +934,7 @@
 </tr>
 <tr>
 <td>Variable Type</td>
-<td>char</td>
+<td>int8_t</td>
 <td>char</td>
 </tr>
 <tr>
@@ -959,8 +959,8 @@
 <thead>
 <tr>
 <th></th>
-<th>Byte 5 - Byte 6</th>
-<th>Byte 7</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 </tr>
 </thead>
 <tbody>
@@ -971,7 +971,7 @@
 </tr>
 <tr>
 <td>Variable Type</td>
-<td>char</td>
+<td>int8_t</td>
 <td>char</td>
 </tr>
 <tr>
@@ -996,8 +996,8 @@
 <thead>
 <tr>
 <th></th>
-<th>Byte 5 - Byte 6</th>
-<th>Byte 7</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 </tr>
 </thead>
 <tbody>
@@ -1008,7 +1008,7 @@
 </tr>
 <tr>
 <td>Variable Type</td>
-<td>char</td>
+<td>int8_t</td>
 <td>uint8_t</td>
 </tr>
 <tr>
@@ -1033,8 +1033,8 @@
 <thead>
 <tr>
 <th></th>
-<th>Byte 5 - Byte 6</th>
-<th>Byte 7</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 </tr>
 </thead>
 <tbody>
@@ -1045,7 +1045,7 @@
 </tr>
 <tr>
 <td>Variable Type</td>
-<td>char</td>
+<td>int8_t</td>
 <td>uint8_t</td>
 </tr>
 <tr>
@@ -1070,8 +1070,8 @@
 <thead>
 <tr>
 <th></th>
-<th>Byte 5 - Byte 6</th>
-<th>Byte 7 - Byte 55</th>
+<th>Byte 5</th>
+<th>Byte 6 - Byte 55</th>
 </tr>
 </thead>
 <tbody>
@@ -1082,7 +1082,7 @@
 </tr>
 <tr>
 <td>Variable Type</td>
-<td>char</td>
+<td>int8_t</td>
 <td>char</td>
 </tr>
 <tr>
