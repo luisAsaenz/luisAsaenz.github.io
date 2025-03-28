@@ -28,8 +28,8 @@ title: API - Messaging
 |------------| --------------| ------------- | ------------- |
 | Variable Name | message_type | sensor_id | sensor_value |
 |Variable Type | int8_t | char | int8_t |
-| Min Value| 1 | 1 | 0 |
-| Max Value| 8 | 2 | 100 |
+| Min Value| NA | 1 | 0 |
+| Max Value| 2 | 2 | 100 |
 | Example | 2 | 2 | 50 |
 
 ### Message Type 5:
@@ -38,8 +38,8 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | subsystem_id |
 |Variable Type | int8_t | char |
-| Min Value | 1 | a |
-| Max Value| 8 | d |
+| Min Value | NA | a |
+| Max Value| 5 | d |
 | Example | 5 | c |
 
 ### Message Type 6:
@@ -48,8 +48,8 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_status |
 |Variable Type | int8_t | uint8_t |
-| Min Value | 1 | 0 |
-| Max Value| 8 | 1 |
+| Min Value | NA | 0 |
+| Max Value| 6 | 1 |
 | Example | 6 | 0 |
 
 ### Message Type 7:
@@ -58,8 +58,8 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | sensor_status |
 |Variable Type | int8_t | uint8_t |
-| Min Value | 1 | 0 |
-| Max Value| 8 | 1 |
+| Min Value | NA | 0 |
+| Max Value| 7 | 1 |
 | Example | 7 | 0 |
 
 ## Sending
@@ -70,8 +70,8 @@ title: API - Messaging
 |------------| --------------| ------------- | ------------- |
 | Variable Name | message_type | motor_id | motor_direction |
 |Variable Type | int8_t | char | char |
-| Min Value| 1 | 1 | 0 |
-| Max Value| 8 | 3 | 2 |
+| Min Value| NA | 1 | 0 |
+| Max Value| 1 | 3 | 2 |
 | Example | 1 | 2 | 1 |
 
 ### Message Type 3:
@@ -80,8 +80,8 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | error_message |
 |Variable Type | int8_t | char |
-| Min Value| 1 | Wifi not connecting |
-| Max Value| 8 | Wifi is connecting |
+| Min Value| NA | Wifi not connecting |
+| Max Value| 3 | Wifi is connecting |
 | Example | 3 | Wifi is connecting |
 
 ### Message Type 4:
@@ -90,8 +90,8 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | wifi_status |
 |Variable Type | int8_t | char |
-| Min Value | 1 | 0 |
-| Max Value| 8 | 1 |
+| Min Value | NA | 0 |
+| Max Value| 4 | 1 |
 | Example | 4 | 0 |
 
 ### Broadcast
@@ -102,6 +102,6 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | broadcast_message |
 |Variable Type | int8_t | char |
-| Min Value| 1 | Minimum value is 1 character |
+| Min Value| NA | Minimum value is 1 character |
 | Max Value| 8 | Max value is 48 characters |
 | Example | 8 | This is broadcast |
