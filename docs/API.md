@@ -16,8 +16,9 @@ title: API - Messaging
 
 ### Team ID
 
-|  | Alex | Luis | Frank | Tyler | 
-|Team Id (char) | 'a' | 'b' | 'c' | 'd'|
+|  | Alex | Luis | Frank | Tyler |
+|--|------|------|-------|-------| 
+|Team Id (char) | a | b | c | d |
 
 ### Receiving 
 
