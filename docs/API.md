@@ -28,7 +28,7 @@ title: API - Messaging
 |------------| --------------| ------------- | ------------- |
 | Variable Name | message_type | sensor_id | sensor_value |
 |Variable Type | int8_t | char | int8_t |
-| Min Value| NA | 1 | 0 |
+| Min Value| 2 | 1 | 0 |
 | Max Value| 2 | 2 | 100 |
 | Example | 2 | 2 | 50 |
 
@@ -38,7 +38,7 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | subsystem_id |
 |Variable Type | int8_t | char |
-| Min Value | NA | a |
+| Min Value | 5 | a |
 | Max Value| 5 | d |
 | Example | 5 | c |
 
@@ -48,7 +48,7 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_status |
 |Variable Type | int8_t | uint8_t |
-| Min Value | NA | 0 |
+| Min Value | 6 | 0 |
 | Max Value| 6 | 1 |
 | Example | 6 | 0 |
 
@@ -58,7 +58,7 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | sensor_status |
 |Variable Type | int8_t | uint8_t |
-| Min Value | NA | 0 |
+| Min Value | 7 | 0 |
 | Max Value| 7 | 1 |
 | Example | 7 | 0 |
 
@@ -70,7 +70,7 @@ title: API - Messaging
 |------------| --------------| ------------- | ------------- |
 | Variable Name | message_type | motor_id | motor_direction |
 |Variable Type | int8_t | char | char |
-| Min Value| NA | 1 | 0 |
+| Min Value| 1 | 1 | 0 |
 | Max Value| 1 | 3 | 2 |
 | Example | 1 | 2 | 1 |
 
@@ -79,7 +79,7 @@ title: API - Messaging
 |      | Byte 5 | Byte 6 - Byte 55 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | error_message |
-|Variable Type | int8_t | char |
+|Variable Type | int8_t | string |
 | Min Value| NA | Wifi not connecting |
 | Max Value| 3 | Wifi is connecting |
 | Example | 3 | Wifi is connecting |
@@ -101,7 +101,7 @@ title: API - Messaging
 |      | Byte 5 | Byte 6 - Byte 55 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | broadcast_message |
-|Variable Type | int8_t | char |
+|Variable Type | int8_t | string |
 | Min Value| NA | Minimum value is 1 character |
 | Max Value| 8 | Max value is 48 characters |
 | Example | 8 | This is broadcast |
