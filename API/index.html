@@ -446,8 +446,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#message-type-1" class="md-nav__link">
-    Message Type 1:
+  <a href="#team-id" class="md-nav__link">
+    Team ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receiving" class="md-nav__link">
+    Receiving
   </a>
   
 </li>
@@ -455,20 +462,6 @@
           <li class="md-nav__item">
   <a href="#message-type-2" class="md-nav__link">
     Message Type 2:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-3" class="md-nav__link">
-    Message Type 3:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-4" class="md-nav__link">
-    Message Type 4:
   </a>
   
 </li>
@@ -490,6 +483,41 @@
           <li class="md-nav__item">
   <a href="#message-type-7" class="md-nav__link">
     Message Type 7:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending" class="md-nav__link">
+    Sending
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-1" class="md-nav__link">
+    Message Type 1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3" class="md-nav__link">
+    Message Type 3:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-4" class="md-nav__link">
+    Message Type 4:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#broadcast" class="md-nav__link">
+    Broadcast
   </a>
   
 </li>
@@ -666,8 +694,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#message-type-1" class="md-nav__link">
-    Message Type 1:
+  <a href="#team-id" class="md-nav__link">
+    Team ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receiving" class="md-nav__link">
+    Receiving
   </a>
   
 </li>
@@ -675,20 +710,6 @@
           <li class="md-nav__item">
   <a href="#message-type-2" class="md-nav__link">
     Message Type 2:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-3" class="md-nav__link">
-    Message Type 3:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-4" class="md-nav__link">
-    Message Type 4:
   </a>
   
 </li>
@@ -710,6 +731,41 @@
           <li class="md-nav__item">
   <a href="#message-type-7" class="md-nav__link">
     Message Type 7:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending" class="md-nav__link">
+    Sending
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-1" class="md-nav__link">
+    Message Type 1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3" class="md-nav__link">
+    Message Type 3:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-4" class="md-nav__link">
+    Message Type 4:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#broadcast" class="md-nav__link">
+    Broadcast
   </a>
   
 </li>
@@ -794,49 +850,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="message-type-1">Message Type 1:</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 5</th>
-<th>Byte 6</th>
-<th>Byte 7</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>message_type</td>
-<td>motor_id</td>
-<td>motor_direction</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>int8_t</td>
-<td>char</td>
-<td>char</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>8</td>
-<td>3</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
+<h3 id="team-id">Team ID</h3>
+<p>|  | Alex | Luis | Frank | Tyler | 
+|Team Id (char) | 'a' | 'b' | 'c' | 'd'|</p>
+<h3 id="receiving">Receiving</h3>
 <h3 id="message-type-2">Message Type 2:</h3>
 <table>
 <thead>
@@ -877,80 +894,6 @@
 <td>2</td>
 <td>2</td>
 <td>50</td>
-</tr>
-</tbody>
-</table>
-<h3 id="message-type-3">Message Type 3:</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 5</th>
-<th>Byte 6 - Byte 55</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>message_type</td>
-<td>error_message</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>int8_t</td>
-<td>char</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>1</td>
-<td>Wifi not connecting</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>8</td>
-<td>Wifi is connecting</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>3</td>
-<td>Wifi is connecting</td>
-</tr>
-</tbody>
-</table>
-<h3 id="message-type-4">Message Type 4:</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 5</th>
-<th>Byte 6</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>message_type</td>
-<td>wifi_status</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>int8_t</td>
-<td>char</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>8</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>4</td>
-<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -1065,6 +1008,125 @@
 </tr>
 </tbody>
 </table>
+<h3 id="sending">Sending</h3>
+<h3 id="message-type-1">Message Type 1:</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 5</th>
+<th>Byte 6</th>
+<th>Byte 7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>motor_id</td>
+<td>motor_direction</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>int8_t</td>
+<td>char</td>
+<td>char</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-3">Message Type 3:</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 5</th>
+<th>Byte 6 - Byte 55</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>error_message</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>int8_t</td>
+<td>char</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>Wifi not connecting</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>Wifi is connecting</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>3</td>
+<td>Wifi is connecting</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-4">Message Type 4:</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 5</th>
+<th>Byte 6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>wifi_status</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>int8_t</td>
+<td>char</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>4</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="broadcast">Broadcast</h3>
 <h3 id="message-type-8">Message Type 8:</h3>
 <table>
 <thead>
