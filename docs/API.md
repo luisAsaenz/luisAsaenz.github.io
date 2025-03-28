@@ -14,15 +14,12 @@ title: API - Messaging
 |7                                              | Sensor Status, X |
 |8                                              | Broadcast |
 
-### Message Type 1:
+### Team ID
 
-|   | Byte 5 | Byte 6 | Byte 7 |
-|------------| --------------| ------------- | ------------- |
-| Variable Name | message_type | motor_id | motor_direction |
-|Variable Type | int8_t | char | char |
-| Min Value| 1 | 1 | 0 |
-| Max Value| 8 | 3 | 2 |
-| Example | 1 | 2 | 1 |
+|  | Alex | Luis | Frank | Tyler | 
+|Team Id (char) | 'a' | 'b' | 'c' | 'd'|
+
+### Receiving 
 
 ### Message Type 2:
 
@@ -33,26 +30,6 @@ title: API - Messaging
 | Min Value| 1 | 1 | 0 |
 | Max Value| 8 | 2 | 100 |
 | Example | 2 | 2 | 50 |
-
-### Message Type 3:
-
-|      | Byte 5 | Byte 6 - Byte 55 |
-|------------| --------------| ------------- |
-| Variable Name | message_type | error_message |
-|Variable Type | int8_t | char |
-| Min Value| 1 | Wifi not connecting |
-| Max Value| 8 | Wifi is connecting |
-| Example | 3 | Wifi is connecting |
-
-### Message Type 4:
-
-|      | Byte 5 | Byte 6 |
-|------------| --------------| ------------- |
-| Variable Name | message_type | wifi_status |
-|Variable Type | int8_t | char |
-| Min Value | 1 | 0 |
-| Max Value| 8 | 1 |
-| Example | 4 | 0 |
 
 ### Message Type 5:
 
@@ -83,6 +60,40 @@ title: API - Messaging
 | Min Value | 1 | 0 |
 | Max Value| 8 | 1 |
 | Example | 7 | 0 |
+
+### Sending
+
+### Message Type 1:
+
+|   | Byte 5 | Byte 6 | Byte 7 |
+|------------| --------------| ------------- | ------------- |
+| Variable Name | message_type | motor_id | motor_direction |
+|Variable Type | int8_t | char | char |
+| Min Value| 1 | 1 | 0 |
+| Max Value| 8 | 3 | 2 |
+| Example | 1 | 2 | 1 |
+
+### Message Type 3:
+
+|      | Byte 5 | Byte 6 - Byte 55 |
+|------------| --------------| ------------- |
+| Variable Name | message_type | error_message |
+|Variable Type | int8_t | char |
+| Min Value| 1 | Wifi not connecting |
+| Max Value| 8 | Wifi is connecting |
+| Example | 3 | Wifi is connecting |
+
+### Message Type 4:
+
+|      | Byte 5 | Byte 6 |
+|------------| --------------| ------------- |
+| Variable Name | message_type | wifi_status |
+|Variable Type | int8_t | char |
+| Min Value | 1 | 0 |
+| Max Value| 8 | 1 |
+| Example | 4 | 0 |
+
+### Broadcast
 
 ### Message Type 8:
 
