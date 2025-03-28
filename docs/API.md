@@ -17,10 +17,10 @@ title: API - Messaging
 ### Team ID
 
 |  | Alex | Luis | Frank | Tyler |
-|--|------|------|-------|-------| 
+|--|------|------|-------|-------|
 |Team Id (char) | a | b | c | d |
 
-## Receiving 
+## Receiving
 
 ### Message Type 2:
 
@@ -80,9 +80,9 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | error_message |
 |Variable Type | int8_t | string |
-| Min Value| NA | Wifi not connecting |
-| Max Value| 3 | Wifi is connecting |
-| Example | 3 | Wifi is connecting |
+| Min Value| 3 | At least 1 character |
+| Max Value| 3 | Max length of message |
+| Example | 3 | Wifi can't connect to wifi_name. |
 
 ### Message Type 4:
 
@@ -90,7 +90,7 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | wifi_status |
 |Variable Type | int8_t | char |
-| Min Value | NA | 0 |
+| Min Value | 4 | 0 |
 | Max Value| 4 | 1 |
 | Example | 4 | 0 |
 
@@ -102,6 +102,6 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | broadcast_message |
 |Variable Type | int8_t | string |
-| Min Value| NA | Minimum value is 1 character |
+| Min Value| 8 | Minimum value is 1 character |
 | Max Value| 8 | Max value is 48 characters |
 | Example | 8 | This is broadcast |
