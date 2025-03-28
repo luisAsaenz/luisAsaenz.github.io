@@ -20,7 +20,7 @@ title: API - Messaging
 |--|------|------|-------|-------| 
 |Team Id (char) | a | b | c | d |
 
-### Receiving 
+## Receiving 
 
 ### Message Type 2:
 
@@ -62,7 +62,7 @@ title: API - Messaging
 | Max Value| 8 | 1 |
 | Example | 7 | 0 |
 
-### Sending
+## Sending
 
 ### Message Type 1:
 
