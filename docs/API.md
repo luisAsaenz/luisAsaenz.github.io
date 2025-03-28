@@ -94,7 +94,7 @@ title: API - Messaging
 | Max Value| 4 | 1 |
 | Example | 4 | 0 |
 
-### Broadcast
+## Broadcast
 
 ### Message Type 8:
 
@@ -105,3 +105,34 @@ title: API - Messaging
 | Min Value| 8 | Minimum value is 1 character |
 | Max Value| 8 | Max value is 48 characters |
 | Example | 8 | This is broadcast |
+
+## Message Code Key
+
+### Message Type 1
+
+|  Value | Key / Meaning|
+|--------|--------------|
+| 0 | closes gate |
+| 1 | opens gate fully |
+| 2 | Gate is half open/closed |
+
+### Message Type 4
+
+|  Value | Key / Meaning|
+|--------|--------------|
+| 0 | Wifi is down. |
+| 1 | Wifi is up. |
+
+### Message Type 6
+
+|  Value | Key / Meaning|
+|--------|--------------|
+| 0 | Motor is down. |
+| 1 | Motor is up. |
+
+### Message Type 7
+
+|  Value | Key / Meaning|
+|--------|--------------|
+| 0 | Sensor is down |
+| 1 | Sensor is up |
