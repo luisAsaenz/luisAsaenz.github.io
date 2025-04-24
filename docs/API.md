@@ -5,9 +5,9 @@ title: API - Messaging
 
 | Message Type <br /> 1 Byte <br /> (int8_t)            | Description |
 | --------------------------------------------- | ----------- |
-|1                                              | Set motor X in Y in direction |
-|2                                              | Print sensor X value Y |
-|3                                              | Subsystem Wifi Error Message |
+|1                                              | Set motor in X position |
+|2                                              | Print sensor value, X |
+|3                                              | Set target RPM, X |
 |4                                              | Subsystem Wifi Status X |
 |5                                              | Subsystem X is not communicating |
 |6                                              | Motor Status, X |
@@ -24,13 +24,13 @@ title: API - Messaging
 
 ### Message Type 2:
 
-|     | Byte 5 | Byte 6 | Byte 7 |
-|------------| --------------| ------------- | ------------- |
-| Variable Name | message_type | sensor_id | sensor_value |
-|Variable Type | int8_t | char | int8_t |
-| Min Value| 2 | 1 | 0 |
-| Max Value| 2 | 2 | 100 |
-| Example | 2 | 2 | 50 |
+|     | Byte 5 | Byte 6 |
+|------------| --------------| ------------- |
+| Variable Name | message_type | sensor_value |
+|Variable Type | int8_t | int8_t |
+| Min Value| 2 | 0 |
+| Max Value| 2 | 100 |
+| Example | 2 | 50 |
 
 ### Message Type 5:
 
@@ -66,23 +66,23 @@ title: API - Messaging
 
 ### Message Type 1:
 
-|   | Byte 5 | Byte 6 | Byte 7 |
-|------------| --------------| ------------- | ------------- |
-| Variable Name | message_type | motor_id | motor_direction |
-|Variable Type | int8_t | char | char |
-| Min Value| 1 | 1 | 0 |
-| Max Value| 1 | 3 | 2 |
-| Example | 1 | 2 | 1 |
+|   | Byte 5 | Byte 6 |
+|------------| --------------| ------------- |
+| Variable Name | message_type | motor_direction |
+|Variable Type | int8_t | char |
+| Min Value| 1 | 0 |
+| Max Value| 1 | 2 |
+| Example | 1  | 1 |
 
 ### Message Type 3:
 
-|      | Byte 5 | Byte 6 - Byte 55 |
+|     | Byte 5 | Byte 6 |
 |------------| --------------| ------------- |
-| Variable Name | message_type | error_message |
-|Variable Type | int8_t | string |
-| Min Value| 3 | At least 1 character |
-| Max Value| 3 | Max length of message |
-| Example | 3 | Wifi can't connect to wifi_name. |
+| Variable Name | message_type | sensor_target |
+|Variable Type | int8_t | int8_t |
+| Min Value| 2 | 0 |
+| Max Value| 2 | 100 |
+| Example | 2 | 50 |
 
 ### Message Type 4:
 
