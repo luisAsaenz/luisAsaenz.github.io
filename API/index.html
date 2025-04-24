@@ -936,15 +936,15 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>Set motor X in Y in direction</td>
+<td>Set motor in X position</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Print sensor X value Y</td>
+<td>Print sensor value, X</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Subsystem Wifi Error Message</td>
+<td>Set target RPM, X</td>
 </tr>
 <tr>
 <td>4</td>
@@ -997,37 +997,31 @@
 <th></th>
 <th>Byte 5</th>
 <th>Byte 6</th>
-<th>Byte 7</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Variable Name</td>
 <td>message_type</td>
-<td>sensor_id</td>
 <td>sensor_value</td>
 </tr>
 <tr>
 <td>Variable Type</td>
 <td>int8_t</td>
-<td>char</td>
 <td>int8_t</td>
 </tr>
 <tr>
 <td>Min Value</td>
 <td>2</td>
-<td>1</td>
 <td>0</td>
 </tr>
 <tr>
 <td>Max Value</td>
 <td>2</td>
-<td>2</td>
 <td>100</td>
 </tr>
 <tr>
 <td>Example</td>
-<td>2</td>
 <td>2</td>
 <td>50</td>
 </tr>
@@ -1152,38 +1146,32 @@
 <th></th>
 <th>Byte 5</th>
 <th>Byte 6</th>
-<th>Byte 7</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Variable Name</td>
 <td>message_type</td>
-<td>motor_id</td>
 <td>motor_direction</td>
 </tr>
 <tr>
 <td>Variable Type</td>
 <td>int8_t</td>
 <td>char</td>
-<td>char</td>
 </tr>
 <tr>
 <td>Min Value</td>
-<td>1</td>
 <td>1</td>
 <td>0</td>
 </tr>
 <tr>
 <td>Max Value</td>
 <td>1</td>
-<td>3</td>
 <td>2</td>
 </tr>
 <tr>
 <td>Example</td>
 <td>1</td>
-<td>2</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -1194,34 +1182,34 @@
 <tr>
 <th></th>
 <th>Byte 5</th>
-<th>Byte 6 - Byte 55</th>
+<th>Byte 6</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Variable Name</td>
 <td>message_type</td>
-<td>error_message</td>
+<td>sensor_target</td>
 </tr>
 <tr>
 <td>Variable Type</td>
 <td>int8_t</td>
-<td>string</td>
+<td>int8_t</td>
 </tr>
 <tr>
 <td>Min Value</td>
-<td>3</td>
-<td>At least 1 character</td>
+<td>2</td>
+<td>0</td>
 </tr>
 <tr>
 <td>Max Value</td>
-<td>3</td>
-<td>Max length of message</td>
+<td>2</td>
+<td>100</td>
 </tr>
 <tr>
 <td>Example</td>
-<td>3</td>
-<td>Wifi can't connect to wifi_name.</td>
+<td>2</td>
+<td>50</td>
 </tr>
 </tbody>
 </table>
