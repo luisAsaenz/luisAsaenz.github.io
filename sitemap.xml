@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-04-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/API/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-04-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/billofMaterials/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-04-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/componentSelection/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-04-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/datasheet/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-04-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/schematic/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-04-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/static/node_modules/mathjax/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-04-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/subfolder/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-04-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/subfolder/another-subfile/</loc>
-         <lastmod>2025-04-24</lastmod>
+         <lastmod>2025-04-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
