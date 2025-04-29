@@ -8,11 +8,7 @@ title: API - Messaging
 |1                                              | Set motor in X position |
 |2                                              | Print sensor value, X |
 |3                                              | Set target RPM, X |
-|4                                              | Subsystem Wifi Status X |
-|5                                              | Subsystem X is not communicating |
-|6                                              | Motor Status, X |
-|7                                              | Sensor Status, X |
-|8                                              | Broadcast |
+|4                                              | Broadcast |
 
 ### Team ID
 
@@ -32,36 +28,6 @@ title: API - Messaging
 | Max Value| 2 | 100 |
 | Example | 2 | 50 |
 
-### Message Type 5:
-
-|      | Byte 5 | Byte 6 |
-|------------| --------------| ------------- |
-| Variable Name | message_type | subsystem_id |
-|Variable Type | int8_t | char |
-| Min Value | 5 | a |
-| Max Value| 5 | d |
-| Example | 5 | c |
-
-### Message Type 6:
-
-|      | Byte 5 | Byte 6 |
-|------------| --------------| ------------- |
-| Variable Name | message_type | motor_status |
-|Variable Type | int8_t | uint8_t |
-| Min Value | 6 | 0 |
-| Max Value| 6 | 1 |
-| Example | 6 | 0 |
-
-### Message Type 7:
-
-|      | Byte 5 | Byte 6 |
-|------------| --------------| ------------- |
-| Variable Name | message_type | sensor_status |
-|Variable Type | int8_t | uint8_t |
-| Min Value | 7 | 0 |
-| Max Value| 7 | 1 |
-| Example | 7 | 0 |
-
 ## Sending
 
 ### Message Type 1:
@@ -70,9 +36,9 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_direction |
 |Variable Type | int8_t | char |
-| Min Value| 1 | 0 |
-| Max Value| 1 | 2 |
-| Example | 1  | 1 |
+| Min Value| x01 | 0 |
+| Max Value| x01 | 2 |
+| Example | x01  | 1 |
 
 ### Message Type 3:
 
@@ -80,31 +46,21 @@ title: API - Messaging
 |------------| --------------| ------------- |
 | Variable Name | message_type | sensor_target |
 |Variable Type | int8_t | int8_t |
-| Min Value| 2 | 0 |
-| Max Value| 2 | 100 |
-| Example | 2 | 50 |
-
-### Message Type 4:
-
-|      | Byte 5 | Byte 6 |
-|------------| --------------| ------------- |
-| Variable Name | message_type | wifi_status |
-|Variable Type | int8_t | char |
-| Min Value | 4 | 0 |
-| Max Value| 4 | 1 |
-| Example | 4 | 0 |
+| Min Value| x03 | 0 |
+| Max Value| x03 | 100 |
+| Example | x03 | 50 |
 
 ## Broadcast
 
-### Message Type 8:
+### Message Type 4:
 
 |      | Byte 5 | Byte 6 - Byte 55 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | broadcast_message |
 |Variable Type | int8_t | string |
-| Min Value| 8 | Minimum value is 1 character |
-| Max Value| 8 | Max value is 48 characters |
-| Example | 8 | This is broadcast |
+| Min Value| x04 | Minimum value is 1 character |
+| Max Value| x04 | Max value is 48 characters |
+| Example | x04 | This is broadcast |
 
 ## Message Code Key
 
@@ -115,24 +71,3 @@ title: API - Messaging
 | 0 | closes gate |
 | 1 | opens gate fully |
 | 2 | Gate is half open/closed |
-
-### Message Type 4
-
-|  Value | Key / Meaning|
-|--------|--------------|
-| 0 | Wifi is down. |
-| 1 | Wifi is up. |
-
-### Message Type 6
-
-|  Value | Key / Meaning|
-|--------|--------------|
-| 0 | Motor is down. |
-| 1 | Motor is up. |
-
-### Message Type 7
-
-|  Value | Key / Meaning|
-|--------|--------------|
-| 0 | Sensor is down |
-| 1 | Sensor is up |
