@@ -12,7 +12,7 @@ title: API - Messaging
 
 ### Team ID
 
-|  | Alex | Luis | Frank | Tyler |
+|  | Alex | Luis | Tyler | Frank |
 |--|------|------|-------|-------|
 |Team Id (char) | a | b | c | d |
 
@@ -35,10 +35,10 @@ title: API - Messaging
 |   | Byte 5 | Byte 6 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_direction |
-|Variable Type | int8_t | char |
-| Min Value| x01 | 0 |
-| Max Value| x01 | 2 |
-| Example | x01  | 1 |
+|Variable Type | int8_t | int8_t |
+| Min Value| x01 | x00 |
+| Max Value| x01 | x02 |
+| Example | x01  | x01 |
 
 ### Message Type 3:
 
