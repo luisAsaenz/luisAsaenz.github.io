@@ -74,4 +74,4 @@ title: API - Messaging
 
 ## Code
 
-<br>Here is the [code](./subfolder/code_esp32_mqtt.zip) to test functionality of system.
+<br>Here is the [code](./subfolder/code_esp32_mqtt.zip) for the Wifi subsystem.
