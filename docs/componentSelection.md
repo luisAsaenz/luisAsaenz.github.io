@@ -1,9 +1,7 @@
 ---
 title: Component Selection
 ---
-## Component Selection
-
-### Role
+## Role
 
 Before we discuss component selection, I will provide a brief description of my role in Team 202. My role in team 202 is head of the wifi module. My system will connect to wifi, and through an application or web service our user will be able to manipulate our exhibit. My system will communicate to another team member's system and they will communicate to another, resulting in a daisy chain of systems, through this daisy chain process my device will be able to communicate the users responses to other portions of the exhibit and deliver the response the user initiated.
 
