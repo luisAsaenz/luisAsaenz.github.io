@@ -23,4 +23,3 @@ Although I am satisfied with my hardware selection, I would choose a larger USB 
 <br><li>[PDF](./subfolder/individualSchematic.pdf) of schematic.</li>
 <br><li>[PDF](./subfolder/TopPCB_Luis.pdf) of PCB.</li>
 <br><li>[ZIP file](./subfolder/individualSchematic.zip) of project.</li>
-<br>Here is the [code](./subfolder/main.py) to test functionality of system.
